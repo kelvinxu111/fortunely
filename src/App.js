@@ -4,7 +4,8 @@ import './App.css';
 import ProgressBar from "./components/ProgressBar"
 import {Body} from "./components/Body"
 import Animator from "./Animation Helper/ChangingProgressProvider"
-import AccordionGoal from './components/AccordionGoal'
+import Accordion from "./components/Accordion"
+
 function App() {
   return (
     <div className="App">
@@ -14,7 +15,12 @@ function App() {
           <Body text="Welcome, Steve!"/>
         
         </h1>
- 
+        <Accordion
+          title="Test cash"
+          content="hopefully this works"
+        />
+          
+        
         <p>
           <Animator values ={[0,20,40,60,80,100]}>
             {percentage =>(
