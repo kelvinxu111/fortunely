@@ -22,7 +22,7 @@ code {
   border: 0px;
 }
 .filler{
-  background: #fae042;
+  background: linear-gradient(90deg, #fae042 ,#fae14283 );
   
   height: 100%;
   border-radius: inherit;
