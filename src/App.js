@@ -22,12 +22,12 @@ function App() {
           
         
         <p>
-          <Animator values ={[0,20,40,60,80,100]}>
+          {/*<Animator values ={[0,20,40,60,80,100]}>
             {percentage =>(
               <ProgressBar value= {percentage}/>
             )}
           </Animator>
-          
+            */}
         </p>
         <p>
           Edit <code>src/App.js</code> and save to reload.

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
-
+import ProgressBar from "./ProgressBar";
 import "../styles/styles.css";
-import Chevron from "./chevron"
+import {ReactComponent as ChevronUp} from "../chevron.svg";
 export default function Accordion(props) {
     const [setActive, setActiveState] = useState("");
     const [setHeight, setHeightState] = useState("0px");
@@ -22,8 +22,15 @@ export default function Accordion(props) {
     return (
         <div className="accordion__section">
         <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
-            <Chevron className={`${setRotate}`} width={10} fill={"#777"} />
-            <p className="accordion__title">{props.title}</p>
+            <ChevronUp className={`${setRotate}`}/>
+            <div className="accordion__title">
+                <p >{props.title}</p>
+            </div>
+            <div className="accordion__progressbar">
+                <ProgressBar value={80}/>
+            </div>
+            
+            
         </button>
         <div
             ref={content}

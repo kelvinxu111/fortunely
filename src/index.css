@@ -16,13 +16,14 @@ code {
 .progress-bar{
   position:relative;
   background: #686868;
-  height: 20px;
+  height: 10px;
   width: 350px;
-  border-radius:50px;
-  border: 1px solid #333
+  border-radius:10px;
+  border: 0px;
 }
 .filler{
   background: #fae042;
+  
   height: 100%;
   border-radius: inherit;
   transition:width .5s ease-in-out
