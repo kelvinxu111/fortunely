@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import logo from "./logo.svg";
 import ProgressBar from "./components/ProgressBar"
 import {Body} from "./components/Body"
 import Animator from "./Animation Helper/ChangingProgressProvider"
 import Accordion from "./components/Accordion"
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
     <div className="App">
+      <Sidebar> 
+        
+      </Sidebar>
+      <div className="App-mainContent">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <h1>
           <Body text="Welcome, Steve!"/>
-        
         </h1>
         <Accordion
           title="Test cash"
           content="hopefully this works"
         />
-          
+        
         
         <p>
           {/*<Animator values ={[0,20,40,60,80,100]}>
@@ -41,6 +44,7 @@ function App() {
         Learn React
         </a>
       </header>
+    </div>
     </div>
   );
 }

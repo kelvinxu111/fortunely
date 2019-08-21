@@ -12,6 +12,13 @@ code {
     monospace;
 }
 
+.sidebar {
+  height: 100%;
+  width: 240px;
+  background-position: fixed;
+  background-color: #0A1122;
+
+}
 
 .progress-bar{
   position:relative;

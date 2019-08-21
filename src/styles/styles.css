@@ -7,6 +7,43 @@
     padding: 0;
   }
 
+/* Style the side bar section */
+
+  .sidebar {
+    height: 100%;
+    width: 16%;
+    max-width: 200px;
+    min-width: 160px;
+    background: #0A1122;
+    display: inline-block;
+    position: fixed;
+    box-shadow: 0px 2px 4px #000000 50%;
+  }
+
+  .App-logo {
+    block-size: 200px;
+    padding: 8px 8px;
+    box-align: center;
+    margin: 0 18%;
+    position: relative;
+    animation: fadeIn ease-in 2s;
+  }
+
+  .tab {
+    color: #f3f3f3;
+    line-height: 40px;
+    padding-left: 16px;
+  }
+
+  .tab:hover {
+    color:#FFBD12;
+    font-weight: bold;
+  }
+
+  .tab:nth-child(5n) {
+    bottom: 24px;
+    position: absolute;
+  }
 
 
 /* Style the accordion section */
