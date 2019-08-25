@@ -34,6 +34,8 @@ ul{
   flex-direction: row;
   color: #f3f3f3;
 }
+
+
 /* Style the side bar section */
 
   .sidebar {
@@ -58,18 +60,27 @@ ul{
 
   .tab {
     color: #f3f3f3;
-    line-height: 40px;
+    line-height: 60px;
     padding-left: 16px;
+    align-items: center;
   }
 
   .tab:hover {
-    color:#FFBD12;
     font-weight: bold;
-  }
+    filter: invert(11.5%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    }
 
   .tab:nth-child(5n) {
     bottom: 24px;
     position: absolute;
+  }
+
+  .icon {
+    margin: 8px;
+  }
+
+  .label {
+    font-size: 18px;
   }
 
 
@@ -77,6 +88,8 @@ ul{
 .accordion__section {
   display: flex;
   flex-direction: column;
+  box-shadow: 0 2px 7px #262626 50%;
+  border-radius: 2px;
  
 }
 
@@ -107,9 +120,7 @@ ul{
 }
 /* Style the accordion content title */
 .accordion__title {
-   margin-left:10px;
-   display:flex;
-   flex-direction: row;
+  margin-left:10px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -147,4 +158,27 @@ ul{
   font-weight: 400;
   font-size: 14px;
   padding: 18px;
+  display:flex;
+  flex-direction: row;
+  text-align: left;
 }
+
+.goal_image {
+  background-image: 
+}
+
+.section_title {
+  margin: 0 36px;
+}
+
+h4 {
+  color: #637381;
+  line-height: 36px;
+}
+
+.section_content{
+  line-height: 36px;
+}
+
+
+

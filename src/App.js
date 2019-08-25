@@ -20,7 +20,7 @@ function App() {
         </h1>
         <Accordion
           title="Test cash"
-          content="hopefully this works"
+          content=""
         />
         
         

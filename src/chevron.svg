@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="12px" height="7px" viewBox="0 0 12 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
     <title>Mask</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <polygon id="path-1" points="10.5 0 6 4.2 1.5 0 0 1.4 6 7 11.999 1.4"></polygon>
-    </defs>
-    <g id="Hi-fi-mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Saving-Copy" transform="translate(-305.000000, -520.000000)">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Saving-Copy" transform="translate(-305.000000, -520.000000)" fill="#FFFFFF" fill-rule="nonzero">
             <g id="Goal-1" transform="translate(289.000000, 491.000000)">
                 <g id="Accordion-header" transform="translate(16.000000, 18.000000)">
                     <g id="Chevron-up" transform="translate(0.000000, 11.000000)">
-                        <mask id="mask-2" fill="white">
-                            <use xlink:href="#path-1"></use>
-                        </mask>
-                        <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" transform="translate(5.999500, 3.500000) scale(1, -1) translate(-5.999500, -3.500000) " xlink:href="#path-1"></use>
+                        <polygon id="Mask" transform="translate(5.999500, 3.500000) scale(1, -1) translate(-5.999500, -3.500000) " points="10.5 0 6 4.2 1.5 0 0 1.4 6 7 11.999 1.4"></polygon>
                     </g>
                 </g>
             </g>
