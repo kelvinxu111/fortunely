@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icon color</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Saving-Copy" transform="translate(-25.000000, -246.000000)" fill="#F3F3F3">
+            <g id="Side-nav" transform="translate(0.000000, 242.000000)">
+                <g id="Overview-tab" transform="translate(25.000000, 0.000000)">
+                    <g id="icon/data/check/24-copy" transform="translate(0.000000, 4.000000)">
+                        <path d="M19.25,20 L19.25,4.25 C19.25,3.83578644 18.9142136,3.5 18.5,3.5 L14,3.5 C13.5857864,3.5 13.25,3.83578644 13.25,4.25 L13.25,20 L10.25,20 L10.25,10.25 C10.25,9.83578644 9.91421356,9.5 9.5,9.5 L5,9.5 C4.58578644,9.5 4.25,9.83578644 4.25,10.25 L4.25,20 L2,20 L2,0.5 L0.5,0.5 L0.5,20.75 C0.5,21.1642136 0.835786438,21.5 1.25,21.5 L21.5,21.5 L21.5,20 L19.25,20 Z M8.75,20 L5.75,20 L5.75,11 L8.75,11 L8.75,20 Z M17.75,20 L14.75,20 L14.75,5 L17.75,5 L17.75,20 Z" id="icon-color"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

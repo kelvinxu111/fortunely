@@ -38,26 +38,17 @@ export default function Accordion(props) {
             className="accordion__content"
         >
             <div className="accordion__text">
-                <ul className="ul">
-                    <li>
-                        date range
-                        <div className="listdetails">
-                            March 1,2019 - August 1,2019 (5 months)
+                    <div className="section_title">
+                        <h4>date range</h4>
+                        <h4>milestones reached</h4>
+                        <h4>next milestone</h4>
                         </div>
-                    </li>
-                    <li>
-                        milestones 
-                        <div className="listdetails">
-                        <div style={{ fontWeight: 'bold' ,  display: 'inline-flex', flexDirection: 'row'}}>4</div>/6
-                        </div>
-                    </li>
-                    <li>
-                        next milestone
-                        <div className="listdetails">
-                            $1,800 saved  |  July 20, 2019
-                        </div>
-                    </li>
-                </ul>
+                    <div className="section_content">
+                        <p>March 1,2019 - August 1,2019  (5 months)</p>
+                        <p><a style={{ fontWeight: 'bold' ,  display: 'inline-flex', flexDirection: 'row'}}>4</a>/6
+                        </p>
+                        <p> save $1,800 by July 20, 2019 </p>
+                    </div>
             
                 {props.content}
             </div>
