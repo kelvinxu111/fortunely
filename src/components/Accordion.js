@@ -2,11 +2,14 @@ import React, { useState, useRef } from "react";
 import ProgressBar from "./ProgressBar";
 import "../styles/styles.css";
 import {ReactComponent as ChevronUp} from "../chevron.svg";
+import Pill from "./Pill";
 export default function Accordion(props) {
+    
     const [setActive, setActiveState] = useState("");
     const [setHeight, setHeightState] = useState("0px");
     const [setRotate, setRotateState] = useState("accordion__icon");
-
+    
+   
     const content = useRef(null);
 
     function toggleAccordion() {
@@ -17,8 +20,9 @@ export default function Accordion(props) {
         setRotateState(
         setActive === "active" ? "accordion__icon" : "accordion__icon rotate"
         );
+        console.log(setActive);
     }
-
+    
     return (
         <div className="accordion__section">
         <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
@@ -56,6 +60,10 @@ export default function Accordion(props) {
                         <div className="listdetails">
                             $1,800 saved  |  July 20, 2019
                         </div>
+                    </li>
+                    <li>
+                        auto deposit
+                        <Pill text="test"/>
                     </li>
                 </ul>
             

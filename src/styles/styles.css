@@ -6,7 +6,23 @@
     margin: 0;
     padding: 0;
   }
-
+.depositbtn:hover{
+  background-color:#8f9fb1a4;
+}
+.depositbtn_active{
+  background-color:#fae14283!important;
+}
+.depositbtn{
+  background-color:#8f9fb1;
+  border-radius:20px;
+  border:0px;
+  cursor: pointer;
+  height: 30px;
+  width: 50px;
+  color:#f3f3f3;
+  text-align: center;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 ul{
   list-style-type: none;
   color: #8f9fb1;
