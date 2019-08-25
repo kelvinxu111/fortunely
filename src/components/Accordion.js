@@ -37,7 +37,30 @@ export default function Accordion(props) {
             style={{ maxHeight: `${setHeight}` }}
             className="accordion__content"
         >
-            <div className="accordion__text">{props.content}</div>
+            <div className="accordion__text">
+                <ul className="ul">
+                    <li>
+                        date range
+                        <div className="listdetails">
+                            March 1,2019 - August 1,2019 (5 months)
+                        </div>
+                    </li>
+                    <li>
+                        milestones 
+                        <div className="listdetails">
+                        <div style={{ fontWeight: 'bold' ,  display: 'inline-flex', flexDirection: 'row'}}>4</div>/6
+                        </div>
+                    </li>
+                    <li>
+                        next milestone
+                        <div className="listdetails">
+                            $1,800 saved  |  July 20, 2019
+                        </div>
+                    </li>
+                </ul>
+            
+                {props.content}
+            </div>
         </div>
         </div>
         );
