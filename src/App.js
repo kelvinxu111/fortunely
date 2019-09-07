@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Body} from "./components/Body"
-import Accordion from "./components/Accordion"
+import Body from "./components/Body"
 import Sidebar from "./components/Sidebar";
 
 function App() {
@@ -12,7 +11,7 @@ function App() {
       </Sidebar>
       <div className="App-mainContent">
       <header className="App-header">
-        <Body> </Body>
+        <Body/>
         <p>
           {/*<Animator values ={[0,20,40,60,80,100]}>
             {percentage =>(

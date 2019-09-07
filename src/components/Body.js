@@ -1,14 +1,95 @@
 import React from "react"
 import Accordion from "./Accordion"
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import {withStyles} from '@material-ui/core/styles'
+const styles = {
+    root:{
+        textTransform: 'capitalize',
+        color: '#fae042 !important'
+    }
+};
+class Body extends React.Component{
+    constructor(props){
+        super(props);
+        this.title = "Test cash"
+        this.content = ""
+        this.dateRange="March 1,2019 - August 1,2019  (5 months)"
+        this.milestonesReached="4/6"
+        this.nextMilestone=" save $1,800 by July 20, 2019 "
+    }
+        /*For now, values in the accordion will be hardcoded until development of accompanying API is sufficient to 
+        support this component. After API is developed, replace onActive functions with a single function, accompanied
+        by a single function with the values presumably inserted inline in the Tab components.
+        */
+    onChange(value){
+        if (value==="uptodate"){
+            this.onActiveUpToDate();
+        }
+        else if (value==="weekly"){
+            this.onActiveWeekly();
+        }
+        else if(value==="monthly"){
+            this.onActiveMonthly();
+        }else if(value==="yearly"){
+            this.onActiveYearly();
+        }
+    }
+    onActiveUpToDate(){
+        this.title = "Up to Date"
+        this.content = ""
+        this.dateRange="March 1,2019 - August 1,2019  (5 months)"
+        this.milestonesReached="4/6"
+        this.nextMilestone=" save $1,800 by July 20, 2019 "
+    }
+    onActiveWeekly(){
+        this.title = "Weekly Goals"
+        this.content = ""
+        this.dateRange="March 1,2019 - August 1,2019  (5 months)"
+        this.milestonesReached="4/6"
+        this.nextMilestone=" save $1,800 by July 20, 2019 "
+    }
+    onActiveMonthly(){
+        this.title = "Monthly Goals"
+        this.content = ""
+        this.dateRange="March 1,2019 - August 1,2019  (5 months)"
+        this.milestonesReached="4/6"
+        this.nextMilestone=" save $1,800 by July 20, 2019 "
+    }
+    onActiveYearly(){
+        this.title = "Yearly Goals"
+        this.content = ""
+        this.dateRange="March 1,2019 - August 1,2019  (5 months)"
+        this.milestonesReached="4/6"
+        this.nextMilestone=" save $1,800 by July 20, 2019 "
+    }
+    render(){
+        const {classes} = this.props;
+        return(
+            
+            <div>
+                <p className="mainBlock">{this.props.text}</p>
+                <h1>Welcome, Steve!</h1>
+                
+                <Tabs classes={{root: classes.root}} onChange={this.onChange} defaultSelectedIndex={1}>
+                    <Tab value="uptodate" label="Up to Date"></Tab>
+                    <Tab value="weekly" label="Weekly"></Tab>
+                    <Tab value="monthly" label="Monthly"></Tab>
+                    <Tab value="yearly" label="Yearly"></Tab>
+                </Tabs>
+                
+                <Accordion
+                title={this.title}
+                content={this.content}
+                dateRange={this.dateRange}
+                milestonesReached={this.milestonesReached}
+                nextMilestone={this.nextMilestone}
+                />
+            </div>
+        )
+    }
+    
+}
+export default withStyles(styles)(Body);
+    
 
-export const Body = props =>(
-    <div>
-        <p className="mainBlock">{props.text}</p>
-        <h1>Welcome, Steve!</h1>
-        <Accordion
-          title="Test cash"
-          content=""
-        />
-
-    </div>
-);
