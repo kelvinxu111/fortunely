@@ -1,11 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #F3F3F3;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #637381;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #F3F3F3;
+  padding: 8px 0px;
+}
+
+.card-info {
+  font-weight: 300;
+  font-size: 12px;
+  padding: 8px;
+  line-height: 16px;
+}
+
+.card1, .card2 {
+  padding-right: 4px;
+}
+
+.spacer-small {
+  margin: 8px;
+}
+
+.summary-section ul {
+  display: inline-block;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -30,7 +69,6 @@ code {
 }
 .filler{
   background: linear-gradient(90deg, #fae042 ,#fae14283 );
-  
   height: 100%;
   border-radius: inherit;
   transition:width .5s ease-in-out

@@ -3,6 +3,8 @@ import Accordion from "./Accordion"
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import {withStyles} from '@material-ui/core/styles'
+import {ReactComponent as Mastercard } from "../Mastercard.svg";
+import {ReactComponent as Visa } from "../Visa.svg";
 const styles = {
     root:{
         textTransform: 'capitalize',
@@ -69,8 +71,33 @@ class Body extends React.Component{
             
             <div>
                 <p className="mainBlock">{this.props.text}</p>
+                <body>
                 <h1>Welcome, Steve!</h1>
-                
+                <div className="card-info">
+                    <a className="card1"><Mastercard/></a>
+                    <text className="card1">Debit Card</text>
+                    <a className="spacer-small"></a>
+                    <a className="card2"><Visa/></a>
+                    <text className="card2">Credit Card</text>
+                    <a className="spacer-small"></a>
+                    <text> | </text>
+                    <a className="spacer-small"></a>
+                    <text id="last-updated"> last updated 2019/09/05 11:59pm </text>
+                </div>
+                <br></br>
+                <div className="summary-section">
+                    <h2>Summary </h2>
+                    <ul>
+                    <h3>Saving Account </h3>
+                    </ul>
+                    <ul>
+                    <h3>Last month saving </h3>
+                    </ul>
+                    <ul>
+                    <h3>Milestone achieved </h3>
+                    </ul>
+
+                </div>
                 <Tabs classes={{root: classes.root}} onChange={this.onChange} defaultSelectedIndex={1}>
                     <Tab value="uptodate" label="Up to Date"></Tab>
                     <Tab value="weekly" label="Weekly"></Tab>
@@ -85,6 +112,7 @@ class Body extends React.Component{
                 milestonesReached={this.milestonesReached}
                 nextMilestone={this.nextMilestone}
                 />
+                </body>
             </div>
         )
     }
@@ -92,4 +120,8 @@ class Body extends React.Component{
 }
 export default withStyles(styles)(Body);
     
+
+
+
+   
 
