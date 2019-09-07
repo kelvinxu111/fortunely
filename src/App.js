@@ -14,7 +14,6 @@ function App() {
         
       </Sidebar>
       <div className="App-mainContent">
-      <header className="App-header">
         <Body> </Body>
         <p>
           {/*<Animator values ={[0,20,40,60,80,100]}>
@@ -24,7 +23,6 @@ function App() {
           </Animator>
             */}
         </p>
-      </header>
     </div>
     </div>
   );
