@@ -46,12 +46,16 @@ export default function Accordion(props) {
                         <h4>date range</h4>
                         <h4>milestones reached</h4>
                         <h4>next milestone</h4>
+                        <h4>auto deposit</h4>
                         </div>
                     <div className="section_content">
                         <p>March 1,2019 - August 1,2019  (5 months)</p>
                         <p><a style={{ fontWeight: 'bold' ,  display: 'inline-flex', flexDirection: 'row'}}>4</a>/6
                         </p>
                         <p> save $1,800 by July 20, 2019 </p>
+                        <p>
+                            <Pill text="test"/>
+                         </p>
                     </div>
             
                 {props.content}
