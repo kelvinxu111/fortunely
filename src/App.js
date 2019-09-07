@@ -1,9 +1,6 @@
 import React from 'react';
 import './App.css';
-import logo from "./logo.svg";
-import ProgressBar from "./components/ProgressBar"
 import {Body} from "./components/Body"
-import Animator from "./Animation Helper/ChangingProgressProvider"
 import Accordion from "./components/Accordion"
 import Sidebar from "./components/Sidebar";
 
