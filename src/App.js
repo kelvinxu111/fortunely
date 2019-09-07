@@ -15,15 +15,7 @@ function App() {
       </Sidebar>
       <div className="App-mainContent">
       <header className="App-header">
-        <h1>
-          <Body text="Welcome, Steve!"/>
-        </h1>
-        <Accordion
-          title="Test cash"
-          content=""
-        />
-        
-        
+        <Body> </Body>
         <p>
           {/*<Animator values ={[0,20,40,60,80,100]}>
             {percentage =>(
@@ -32,17 +24,6 @@ function App() {
           </Animator>
             */}
         </p>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        Learn React
-        </a>
       </header>
     </div>
     </div>
