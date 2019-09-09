@@ -1,72 +1,78 @@
 import React from "react"
 import Accordion from "./Accordion"
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import {withStyles} from '@material-ui/core/styles'
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tab';
 import {ReactComponent as Mastercard } from "../Mastercard.svg";
 import {ReactComponent as Visa } from "../Visa.svg";
-const styles = {
-    root:{
-        textTransform: 'capitalize',
-        color: '#fae042 !important'
-    }
-};
-class Body extends React.Component{
+import "../styles/styles.css";
+
+
+export default class Body extends React.Component{
     constructor(props){
         super(props);
-        this.title = "Test cash"
-        this.content = ""
-        this.dateRange="March 1,2019 - August 1,2019  (5 months)"
-        this.milestonesReached="4/6"
-        this.nextMilestone=" save $1,800 by July 20, 2019 "
+        this.state = {
+            title: "Test cash",
+            content:"",
+            dateRange:"March 1,2019 - August 1,2019  (5 months)",
+            milestonesReached:"4/6",
+            nextMilestone:" save $1,800 by July 20, 2019 "
+        }
+
     }
         /*For now, values in the accordion will be hardcoded until development of accompanying API is sufficient to 
-        support this component. After API is developed, replace onActive functions with a single function, accompanied
-        by a single function with the values presumably inserted inline in the Tab components.
+        support this component. After API is developed, replace onActive functions with a single function to call the API and return with values
+        to be updated.
         */
-    onChange(value){
-        if (value==="uptodate"){
+    onChange = (eventKey) =>{
+        if (eventKey==="uptodate"){
             this.onActiveUpToDate();
         }
-        else if (value==="weekly"){
-            this.onActiveWeekly();
+        else if (eventKey==="weekly"){
+            this.onActiveWeekly()
         }
-        else if(value==="monthly"){
-            this.onActiveMonthly();
-        }else if(value==="yearly"){
-            this.onActiveYearly();
+        else if(eventKey==="monthly"){
+            this.onActiveMonthly()
+        }else if(eventKey==="yearly"){
+            this.onActiveYearly()
         }
     }
-    onActiveUpToDate(){
-        this.title = "Up to Date"
-        this.content = ""
-        this.dateRange="March 1,2019 - August 1,2019  (5 months)"
-        this.milestonesReached="4/6"
-        this.nextMilestone=" save $1,800 by July 20, 2019 "
+    onActiveUpToDate = () =>{
+        this.setState({
+            title: "Test cash",
+            content:"",
+            dateRange:"March 1,2019 - August 1,2019  (5 months)",
+            milestonesReached:"4/6",
+            nextMilestone:" save $1,800 by July 20, 2019 "
+        })
     }
-    onActiveWeekly(){
-        this.title = "Weekly Goals"
-        this.content = ""
-        this.dateRange="March 1,2019 - August 1,2019  (5 months)"
-        this.milestonesReached="4/6"
-        this.nextMilestone=" save $1,800 by July 20, 2019 "
+    onActiveWeekly = () =>{
+        this.setState({
+            title: "Weekly Goals",
+            content:"",
+            dateRange:"March 1,2019 - August 1,2019  (5 months)",
+            milestonesReached:"4/6",
+            nextMilestone:" save $1,800 by July 20, 2019 "
+        })
     }
-    onActiveMonthly(){
-        this.title = "Monthly Goals"
-        this.content = ""
-        this.dateRange="March 1,2019 - August 1,2019  (5 months)"
-        this.milestonesReached="4/6"
-        this.nextMilestone=" save $1,800 by July 20, 2019 "
+    onActiveMonthly = () =>{
+        this.setState({
+            title: "Monthly Goals",
+            content:"",
+            dateRange:"March 1,2019 - August 1,2019  (5 months)",
+            milestonesReached:"4/6",
+            nextMilestone:" save $1,800 by July 20, 2019 "
+        })
     }
-    onActiveYearly(){
-        this.title = "Yearly Goals"
-        this.content = ""
-        this.dateRange="March 1,2019 - August 1,2019  (5 months)"
-        this.milestonesReached="4/6"
-        this.nextMilestone=" save $1,800 by July 20, 2019 "
+    onActiveYearly = () =>{
+        this.setState({
+            title: "Yearly Goals",
+            content:"",
+            dateRange:"March 1,2019 - August 1,2019  (5 months)",
+            milestonesReached:"4/6",
+            nextMilestone:" save $1,800 by July 20, 2019 "
+        })
     }
     render(){
-        const {classes} = this.props;
         return(
             
             <div>
@@ -98,19 +104,22 @@ class Body extends React.Component{
                     </ul>
 
                 </div>
-                <Tabs classes={{root: classes.root}} onChange={this.onChange} defaultSelectedIndex={1}>
-                    <Tab value="uptodate" label="Up to Date"></Tab>
-                    <Tab value="weekly" label="Weekly"></Tab>
-                    <Tab value="monthly" label="Monthly"></Tab>
-                    <Tab value="yearly" label="Yearly"></Tab>
-                </Tabs>
+               
+                    <Tabs className="tabs" defaultActiveKey="uptodate" onSelect={this.onChange} transition="true">
+                        <Tab eventKey="uptodate" title="Up to Date"></Tab>
+                        <Tab eventKey="weekly" title="Weekly"></Tab>
+                        <Tab eventKey="monthly" title="Monthly"></Tab>
+                        <Tab eventKey="yearly" title="Yearly"></Tab>
+                    </Tabs>
+             
+                
                 
                 <Accordion
-                title={this.title}
-                content={this.content}
-                dateRange={this.dateRange}
-                milestonesReached={this.milestonesReached}
-                nextMilestone={this.nextMilestone}
+                title={this.state.title}
+                content={this.state.content}
+                dateRange={this.state.dateRange}
+                milestonesReached={this.state.milestonesReached}
+                nextMilestone={this.state.nextMilestone}
                 />
                 </body>
             </div>
@@ -118,7 +127,7 @@ class Body extends React.Component{
     }
     
 }
-export default withStyles(styles)(Body);
+
     
 
 
